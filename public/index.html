@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+ <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="IPL visualization">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link href="./styles.css" rel="stylesheet">
+    <title>
+        IPL visualization
+    </title>
+</head>
+
+<body>
+    
+
+    <h1>IPL Dataset visualization</h1>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+
+     <div class="user-input" >
+      <!-- <span class ="label">Enter year: </span>
+      <form id="query">
+        <input type="number" class="yin" name="year" />
+        <input type="submit" value="search" />
+      </form> -->
+      <form id="query" >
+        
+        <label for="quantity" style = "font-size: 22px;">Enter year: </label>
+        <input type="number" id="quantity" name="year" min="2008" max="2019" style = "font-size: 20px;padding: 10px ;border: 1px solid; border-radius: 3px;">
+        <input type="submit" value="Submit";  style = "padding: 12px 35px 12px 35px;margin-left: 10px; border: 1px ; border-radius: 3px; background-color: black; color: white; font-weight: 600;font-size: 20px;">
+      </form><br><br><br>
+    </div>
+    <div id="dynamic-economy-bowlers" style="min-width: 310px; height: 400px; margin: 0 auto ;border: 1px dashed rgb(21, 172, 177)"></div><br><br><br>
+
+    <div id="matches-played-per-year" style="min-width: 310px; height: 400px; margin: 0 ;border:1px dashed rgb(21, 172, 177)"></div><br><br>
+      
+
+
+    <div id="matchesWon" style="min-width: 310px; height: 400px; margin: 0 auto;border:1px dashed rgb(21, 172, 177)"></div><br><br>
+       
+
+
+    <div id="extra-runs-conceded" style="min-width: 310px; height: 400px; margin: 0 auto;border:1px dashed rgb(21, 172, 177)"></div><br><br>
+
+    <div id="economical-rate-of2015" style="min-width: 310px; height: 400px; margin: 0 auto;border:1px dashed rgb(21, 172, 177)"></div><br><br>
+
+    <div id="eden-garden-analysis" style="min-width: 310px; height: 400px; margin: 0 auto;border:1px dashed rgb(21, 172, 177)"></div><br>
+    
+    
+
+    <script src="./app.js"></script>
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+</body>
